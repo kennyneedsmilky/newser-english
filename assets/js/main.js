@@ -44,7 +44,8 @@ function getNews () {
     })
     .then(data => {
         const dataResults = data;
-        console.log(dataResults);
+        
+        console.log(JSON.stringify(dataResults));
         dataResults.articles.forEach(article => {
             renderArticle(article);
         });
